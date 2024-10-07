@@ -1,0 +1,544 @@
+    body {
+        font-family: 'Poppins', sans-serif;
+        color: #464646;
+    }
+    .cabecera_conteiner{
+        display: flex;
+        flex-direction: row;
+        padding: 0 3px;
+        align-items: center;
+    }
+    
+        .logo_cabecera{
+        max-width: 35px; 
+        max-height: 30px; 
+        padding-right: 5px;
+    }
+    .nombre {
+        font-size: 10px;
+        white-space: nowrap; 
+        text-align: left; 
+        font-weight: bold;
+    }
+        .menu {
+            display: flex;
+            justify-content: space-between;
+            background-color: #ffffff;
+            padding: 10px 20px;
+            font-size: 16px;
+        }
+            .listado_menu{
+            display: none;
+        }
+            .menu_items {
+            list-style: none; 
+            padding: 0 30px; 
+            display: inline-block; 
+        }
+            .menu_titulo {
+            text-decoration: none; 
+            color: #444444; 
+            font-size: 18px; 
+            transition: color 0.3s ease; 
+        }
+           .menu_titulo:hover {
+            color: #2132ed; 
+        }
+         .mail { 
+            margin-left: auto; 
+            text-align: right; 
+            font-size: 10px;
+        }
+         a:hover {
+            color: #046887; 
+        }
+         .descripcion {
+           padding: 0 3px;    
+        }
+        .foto_perfil_efecto{
+          width:98px;
+          height: 98px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+        .redes_conteiner{
+            display: flex;
+            justify-content: flex-start;     
+        }
+        .redes{
+               font-size: 12px;
+                display: flex; 
+                flex-direction: row;
+                list-style: none;
+                flex-grow: 1;
+                gap: 15px;
+                font-weight: bold;
+                padding: 0;
+                margin: 0;
+        }
+        .redes_items{
+            display: flex;
+            margin-bottom: 20px;
+        }
+        h1 {
+            font-size: 14px;
+            text-align: justify;
+        }
+        h2 {
+            font-size: 12px;
+            font-weight: normal;
+            text-align: justify;
+        }
+        .acerca_de_mi{
+            padding: 15px 3px;
+            background-color: #EAF2FD;
+          }
+          .acerca_titulo{
+            font-size: 20px;
+         }
+        .firma{
+            max-width: 120px;
+            max-height: 120px;
+            padding-left: 35px;
+        }
+        .skills {
+            background-color: #F5F5F5;
+            display: flex;
+            flex-direction: column;
+            justify-content: center; 
+            align-items: center;     
+            text-align: center;     
+            padding:30px  0;
+        }
+        .skills_title{
+            font-size: 20px;
+            text-align: center;
+            padding: 12px 0;
+        }     
+        .skills_cards {
+            display: flex;
+            flex-wrap: wrap; 
+            gap: 15px; 
+            justify-content: center; 
+            align-items: center; 
+}
+        .skills_cards_items {
+            display: flex;
+            flex-direction: column;
+            width: 145px;
+            height: 118px;
+            background-color: #ffffff;
+            justify-content: flex-end;
+            align-items: flex-start;
+            font-size: 14px;
+            font-weight: bold;
+            border-radius: 8px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease; 
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+        }
+        .skills_cards_items:hover {
+            transform: translateY(-8px); /* Efecto de elevación en hover */
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada en hover */
+        }
+        a {
+            text-decoration: none;
+            color: #444;
+            transition: color 0.3s ease;
+}
+.formacion-cards{
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+.formacion-cards:hover {
+    transform: translateY(-8px); /* Efecto de elevación en hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada en hover */
+}
+
+        .formacion-texto{
+            margin: 3%;
+            font-size: 14px;
+        }
+        .formacion-h2{
+            margin: 3%;
+        }
+.imagen_encriptador{
+    width: 296px;
+    height: 144px;
+}
+.card-text{
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+    
+}
+.card-img {
+    max-height: 37px;
+    padding-left: 10px;
+}
+.formacion-academica {
+    display: flex;
+    flex-direction: column;
+    width: 296px;
+    height: 118px;
+    background-color: #ffffff;
+    justify-content: center;
+    align-items: center;
+
+}
+.for-img{
+    max-height: 100px;
+}
+.acade_cards{
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center;
+    align-items: center; 
+}
+.formacion{
+    background-color: #EAF2FD;
+    padding: 10px 0;
+}
+.game_numero-secreto{
+    background-color: #eae3e3;
+    padding: 15px;
+    max-width: 296px;
+    max-height: 144px;
+}
+.game-section{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: end;
+    justify-content: center;
+    gap: 10px;
+    padding:  20px 30px;
+}
+.card-numero{
+    display: flex;
+    flex-direction: column;
+    width: 280px;
+    height: 118px;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    font-weight: bold;
+    padding-bottom: 0%;
+}
+.button-container {
+    display: flex;
+    padding-top: 0%;
+    gap: 5px;
+  }
+  .button {
+    background-color: #4285f4;
+    border: none;
+    color: white;
+    padding: 10px 25px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 12px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+    max-height: 35px;
+  }
+  .titulo_texto {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end; 
+  height: 100%;
+}
+  .button:first-child {
+    background-color: white;
+    color: #4285f4;
+    border: 1px solid #4285f4;
+  }
+
+  .seccion_contacto {
+    background-color: #EAF2FD;
+    padding: 20px 0;
+    display: flex;
+    justify-content: center; 
+}
+.contact-container {
+    width: 100%;  
+    max-width: 800px; 
+    margin: 0 auto; 
+    padding: 20px;
+    background-color: #EAF2FD;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Añade una sombra sutil */
+}
+.input-group {
+    margin-bottom: 15px;
+    text-align: left;
+    width: 90%;
+}
+label {
+    font-size: 0.8rem;
+    color: #333;
+    margin-bottom: 5px;
+    display: block;
+}
+input, textarea {
+    font-size: 1rem;
+    padding: 10px;
+    width: 100%;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input:focus, textarea:focus {
+    outline: none;
+    border-color: #002095;
+}
+
+.footer {
+    text-align: center;
+    font-size: 12px;
+    color: #999;
+    margin-top: 20px;
+}
+
+.texto_contacto {
+    font-size: 1.2rem; /* Aumenta el tamaño de la fuente en pantallas medianas */
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+button {
+    font-size: .8rem;
+    padding: 10px 20px;
+    background-color: #2451f5;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0033cc;
+}
+.img-limited {
+    max-width: 464px;
+    max-height: 593px;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    display: none; /* Oculta por defecto */
+}
+
+        @media (min-width: 768px) and (max-width: 1439px) 
+
+        {
+            .nombre {
+                font-size: 14px;
+                white-space: nowrap; 
+                text-align: left; 
+            }
+            .mail { 
+                margin-left: auto; 
+                text-align: right; 
+                font-size: 14px;
+            }
+            .cabecera_conteiner { 
+                padding: 0 30px;
+            }
+            
+            .foto_perfil_efecto {
+                width: 146px;
+                height: 146px;
+                border-radius: 50%;
+                object-fit: cover;
+            }
+            
+            .descripcion {
+                margin: 0 30px;
+                display: flex;
+                flex-direction: row-reverse;
+                margin-top: 40px;
+                gap: 25px;
+                align-items: center; /* Centra verticalmente los elementos */
+            }
+        
+            h1 {
+                font-size: 18px;
+                padding-top: 16px;
+            }
+            
+            h2 {
+                font-size: 16px;
+            }
+            .acerca_de_mi{
+                padding: 15px 35px;
+              }
+              .skills_cards_items{
+                width: 220px;
+                height: 118px;
+                .button {
+                    text-align: left;
+                    text-decoration: none;
+                    font-size: 16px;
+                    margin: 4px 2px;
+                    cursor: pointer;
+                    border-radius: 4px;
+                    max-height: 35px;
+                  }
+                  .imagen_encriptador{
+                    width: 704px;
+                    height: 320px;
+                   }
+                   .card-numero{
+                    width: 300px;
+                    height: 118px;
+                }
+                .formacion-academica{
+                    width: 224px;
+                    height: 118px;
+                }
+                .seccion_contacto{
+                    background-color: #EAF2FD;
+                    padding: 10px 0;
+                }
+                
+                .contact-container {
+                    width: 80%; 
+                }
+            }
+            
+
+                }
+
+        
+        @media (min-width: 1440px) {
+
+            .menu {
+                display: flex;
+                text-align: right; 
+            }
+            .mail { 
+                margin-left: auto; 
+                text-align: right; 
+                font-size: 18px;
+            }
+
+            .logo_cabecera{
+                max-width: 50px; 
+                max-height: 50px; 
+                padding-right: 5px;
+            }
+            .listado_menu {
+                display: flex; 
+                text-align: right;
+        }
+        .nombre {
+            font-size: 22px;
+            white-space: nowrap; 
+            text-align: left; 
+            padding-left: 12px;
+        }
+        .cabecera_conteiner{ 
+            padding: 0 100px;
+        }
+
+        .foto_perfil_efecto {
+            width: 368px;
+            height:368px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+        .descripcion {
+            padding: 0 100px;
+
+        }
+        h1 {
+            font-size: 18px;
+            padding-top: 20px;
+        }
+        
+        h2 {
+            font-size: 18px; 
+        }
+        .redes{
+            font-size: 16px;
+                display: flex; 
+                flex-direction: row;
+                list-style: none;
+                flex-grow: 1;
+                gap: 30px;
+                font-weight: bold;
+                padding: 0;
+                margin: 0;
+        }
+        .redes_conteiner{
+            padding:  25px 0;
+          }
+          .redes{
+             font-size: 24px;
+         }
+        .acerca_de_mi{
+            padding: 10px 100px;
+          }
+          .acerca_titulo{
+            font-size: 30px;
+          }
+  
+         .acerca_parrafo{
+            padding-right: 250px;
+        }
+        .skills_title{
+            font-size: 30px;
+        }
+        .skills_cards_items {
+            width: 230px;
+            height: 174px;
+        }
+          .button {
+                text-align: left;
+                text-decoration: none;
+                font-size: 20px;
+                margin: 4px 2px;
+                cursor: pointer;
+                border-radius: 4px;
+                max-height: 35px;
+              }
+            .imagen_encriptador{
+                width: 752px;
+                height: 406px;
+               }
+        
+        .contacto {
+            margin-left: auto;
+            font-size: 16px;
+            padding-right: 10px;
+        }  
+        .formacion-academica {
+            width: 368px;
+            height: 286px;
+        
+        }
+        .for-img{
+            max-height: 150px;
+        
+        }
+        .formacion-texto{
+            margin: 1%;
+            font-size: 20px;
+        }
+        .formacion-h2{
+            margin: 3%;
+        }
+        .img-limited {
+            display: block; 
+        }
+        .seccion_contacto {
+            padding: 50px 100px;
+            gap: 0;
+           
+        }
+    }
