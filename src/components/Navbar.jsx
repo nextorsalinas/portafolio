@@ -33,7 +33,7 @@ const Navbar = () => {
           <li>
             <a href="#" className="nav-course-btn">
               <BookOpen size={16} />
-              <span>Cursos Inmersión Tech</span>
+              <span>Cursos Gratis</span>
             </a>
           </li>
         </ul>
