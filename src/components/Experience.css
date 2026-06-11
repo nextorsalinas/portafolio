@@ -1,0 +1,126 @@
+.experience-section {
+  position: relative;
+}
+
+.timeline {
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 24px;
+  height: 100%;
+  width: 2px;
+  background: var(--card-border);
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 2rem;
+  padding: 2rem;
+  margin-left: 60px;
+}
+
+.timeline-icon {
+  position: absolute;
+  top: 2rem;
+  left: -60px;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: var(--bg-secondary);
+  border: 2px solid var(--accent-secondary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--accent-secondary);
+  box-shadow: 0 0 15px rgba(14, 165, 233, 0.3);
+  z-index: 2;
+}
+
+.timeline-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.timeline-header h3 {
+  font-size: 1.4rem;
+  color: var(--text-primary);
+  font-weight: 700;
+}
+
+.timeline-date {
+  background: rgba(14, 165, 233, 0.1);
+  color: var(--accent-secondary);
+  padding: 0.3rem 1rem;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.timeline-company {
+  font-size: 1.1rem;
+  color: var(--accent-primary);
+  margin-bottom: 1.5rem;
+  font-weight: 500;
+}
+
+.timeline-tasks {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.timeline-tasks li {
+  position: relative;
+  padding-left: 1.5rem;
+  color: var(--text-secondary);
+}
+
+.timeline-tasks li::before {
+  content: '→';
+  position: absolute;
+  left: 0;
+  color: var(--accent-secondary);
+}
+
+.timeline-tasks li strong {
+  color: var(--text-primary);
+}
+
+@media (max-width: 768px) {
+  .timeline::before {
+    left: 16px;
+  }
+  
+  .timeline-item {
+    margin-left: 45px;
+    padding: 1.5rem;
+  }
+  
+  .timeline-icon {
+    left: -45px;
+    width: 32px;
+    height: 32px;
+    top: 1.5rem;
+  }
+  
+  .timeline-icon svg {
+    width: 16px;
+    height: 16px;
+  }
+  
+  .timeline-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
