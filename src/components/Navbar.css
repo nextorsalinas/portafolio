@@ -36,6 +36,7 @@
   display: flex;
   gap: 2rem;
   list-style: none;
+  align-items: center;
 }
 
 .nav-links a {
@@ -48,6 +49,30 @@
 
 .nav-links a:hover {
   color: var(--accent-primary);
+}
+
+.nav-course-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  background: rgba(168, 85, 247, 0.1);
+  color: var(--accent-primary) !important;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  border: 1px solid rgba(168, 85, 247, 0.3);
+  transition: all 0.3s ease !important;
+}
+
+.nav-course-btn:hover {
+  background: rgba(168, 85, 247, 0.2);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(168, 85, 247, 0.2);
+}
+
+.nav-divider {
+  width: 1px;
+  height: 20px;
+  background: var(--card-border);
 }
 
 @media (max-width: 768px) {

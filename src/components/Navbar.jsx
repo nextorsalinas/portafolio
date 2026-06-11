@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { BookOpen } from 'lucide-react';
 import './Navbar.css';
 
 const Navbar = () => {
@@ -28,6 +29,13 @@ const Navbar = () => {
               <a href={link.href}>{link.name}</a>
             </li>
           ))}
+          <li className="nav-divider"></li>
+          <li>
+            <a href="#" className="nav-course-btn">
+              <BookOpen size={16} />
+              <span>Cursos Inmersión Tech</span>
+            </a>
+          </li>
         </ul>
       </div>
     </nav>
